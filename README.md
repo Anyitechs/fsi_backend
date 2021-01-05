@@ -66,9 +66,12 @@ yarn start
 - Request Method: GET
 - URL: [http://localhost:3000/api/v1/plans](http://localhost:3000/api/v1/plans)
 
-- Sample Request: `{ "username": "any name", "password": "any password" }`
 - Sample Response: `{ "status": "Success", "plans": { "plans": "[]" } }`
 
+### ResetBVN
+
+- Request Method: POST
+- URL: [http://localhost:3000/api/v1/bvn/rest](http://localhost:3000/api/v1/bvn/rest)
 
 ## Author
 
