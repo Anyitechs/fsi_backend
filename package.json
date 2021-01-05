@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "node --experimental-modules bin/www",
+    "start": "node bin/www",
     "dev": "nodemon --experimental-modules bin/www.mjs",
     "test": "nyc --reporter=html --reporter=text mocha",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
