@@ -12,7 +12,7 @@ class ResetBVN {
         })
     }
     getBVNRequestCredentials = async () => {
-        let BvnRequestCredentials = await axios.post(process.env.RESET_BVN_URL);
+        let BvnRequestCredentials = await axios.post('https://sandboxapi.fsi.ng/nibss/bvnr/Reset');
         return BvnRequestCredentials.headers;
     }
 }

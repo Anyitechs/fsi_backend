@@ -2,7 +2,7 @@ import axios from 'axios';
 
 class PlanService {
     getPlans = async () => {
-        let plans = await axios.get(process.env.GET_PLANS_URL, {
+        let plans = await axios.get('https://sandboxapi.fsi.ng/relianceHMO/plans', {
             headers: {
                 'Sandbox-Key': process.env.SANDBOX_KEY,
                 'Content-Type': 'application/json'
