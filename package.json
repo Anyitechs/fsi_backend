@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node --experimental-modules bin/www",
     "dev": "nodemon --experimental-modules bin/www.mjs",
+    "test": "nyc --reporter=html --reporter=text mocha",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "eslint": "eslint src/**/*.js"
   },
   "dependencies": {
@@ -19,7 +21,8 @@
     "helmet": "^4.3.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "supertest": "^6.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -27,10 +30,14 @@
     "@babel/node": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@babel/register": "^7.12.10",
+    "chai": "^4.2.0",
+    "coveralls": "^3.1.0",
     "eslint": "^7.16.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-import": "^2.22.1",
-    "nodemon": "^2.0.6"
+    "mocha": "^8.2.1",
+    "nodemon": "^2.0.6",
+    "nyc": "^15.1.0"
   }
 }
