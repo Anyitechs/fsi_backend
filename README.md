@@ -1,5 +1,7 @@
 # FSI Nodejs API task
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/97d855c353c34362801e76387f292af6)](https://app.codacy.com/gh/Anyitechs/fsi_backend?utm_source=github.com&utm_medium=referral&utm_content=Anyitechs/fsi_backend&utm_campaign=Badge_Grade_Settings)
+
 A simple API to power a mini web app
 
 ## Getting Started
