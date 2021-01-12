@@ -2,13 +2,15 @@
   "name": "fsi-backend",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node bin/www.js",
-    "dev": "nodemon --experimental-modules bin/www.mjs",
-    "test": "nyc --reporter=html --reporter=text mocha",
+    "build": "babel src -d dist --copy-files",
+    "start": "npm run build && node dist/app.js",
+    "serve": "node dist/app.js",
+    "start:dev": "nodemon --exec babel-node src",
+    "test": "npm run build && nyc --reporter=html --reporter=text mocha --require @babel/register",
     "coverage": "nyc report --reporter=text-lcov | coveralls",
-    "eslint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -20,6 +22,7 @@
     "express": "~4.16.1",
     "helmet": "^4.3.1",
     "http-errors": "~1.6.3",
+    "innovation-sandbox": "^1.3.1",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
     "supertest": "^6.0.1"

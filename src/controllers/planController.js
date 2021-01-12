@@ -1,8 +1,8 @@
-import PlanService from '../services/planService.js';
+import planService from '../services/PlanService';
 
-export const getPlans = async (req, res) => {
+const getPlans = async (req, res) => {
     try {
-        let plans = await PlanService.getPlans();
+        const plans = await planService();
         res.status(200).json({
             success: true,
             message: 'OK',
@@ -15,3 +15,6 @@ export const getPlans = async (req, res) => {
         });
     }
 }
+export default getPlans;
+
+

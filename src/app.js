@@ -4,7 +4,7 @@ import logger from 'morgan';
 import helmet from 'helmet';
 import cors from 'cors';
 
-import apiRoutes from './src/routes/index.js';
+import apiRoutes from './routes/index';
 
 dotenv.config();
 const app = express();
@@ -12,7 +12,7 @@ const app = express();
 app.use(helmet())
   .disable('x-powered-by')
   .use(cors())
-  .use(logger('dev'))
+  .use(logger('combined'))
   .use(express.json())
   .use(express.urlencoded({ extended: false }));
 
@@ -26,7 +26,7 @@ app.all('*', (req, res) => {
 })
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use((err, req, res) => {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
@@ -37,4 +37,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-export default app;
+const port = process.env.PORT || 3000;
+export default app.listen(port, () => {
+  console.log(`app started on port ${port}`);
+});

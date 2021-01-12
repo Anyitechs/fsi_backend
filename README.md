@@ -70,8 +70,13 @@ yarn start
 
 ### ResetBVN
 
+- Request Method: GET
+- URL: [http://localhost:3000/api/v1/bvn/reset](http://localhost:3000/api/v1/bvn/reset)
+
+### VerifyBVN
+
 - Request Method: POST
-- URL: [http://localhost:3000/api/v1/bvn/rest](http://localhost:3000/api/v1/bvn/rest)
+- URL: [http://localhost:3000/api/v1/bvn/verify](http://localhost:3000/api/v1/bvn/verify)
 
 ## Author
 
