@@ -1,6 +1,6 @@
 # FSI Nodejs API task
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/97d855c353c34362801e76387f292af6)](https://app.codacy.com/gh/Anyitechs/fsi_backend?utm_source=github.com&utm_medium=referral&utm_content=Anyitechs/fsi_backend&utm_campaign=Badge_Grade_Settings)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/97d855c353c34362801e76387f292af6)](https://app.codacy.com/gh/Anyitechs/fsi_backend?utm_source=github.com&utm_medium=referral&utm_content=Anyitechs/fsi_backend&utm_campaign=Badge_Grade_Settings) [![Coverage Status](https://coveralls.io/repos/github/Anyitechs/fsi_backend/badge.svg?branch=master)](https://coveralls.io/github/Anyitechs/fsi_backend?branch=master)
 
 A simple API to power a mini web app
 
