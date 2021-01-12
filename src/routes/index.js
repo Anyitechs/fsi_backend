@@ -1,9 +1,9 @@
 import express from 'express';
-import planRoutes from './plan.js';
-import resetRoute from './resetBVN.js';
+import planRoutes from './plan';
+import bvnRoutes from './bvn';
 
 const router = express.Router();
 router.use('/plans/', planRoutes);
-router.use('/bvn', resetRoute);
+router.use('/bvn', bvnRoutes);
 
 export default router;

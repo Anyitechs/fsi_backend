@@ -9,6 +9,8 @@
         "consistent-return": 0
     },
     "env": {
+        "node": true,
+        "es6": true,
         "mocha": true
     }
 }
